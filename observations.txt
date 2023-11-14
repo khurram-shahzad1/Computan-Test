@@ -1,0 +1,4 @@
+i complete this task using SCSS for the styles and gulp to compile to CSS and JavaScript.
+i made popup modal using pure javascript and scss for style.
+page is fully responsive using media queries.
+estimated time to do this assignment is 2 hours and actual time that spent to do this assignment is 1:25 mints.

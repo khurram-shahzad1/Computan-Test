@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+@font-face {
+  font-family: kalvika_basic;
+  font-weight: lighter;
+  /* src: url("../fonts/fonts/klavika-bold.otf"); */
+  /* src: url("../fonts/klavika-regular-italic.otf"); */
+  /* src: url("../fonts/klavika-bold.otf"); */
+  /* src: url("../fonts/klavika-bold.otf"); */
+  src: url("../fonts/klavika-medium.otf");
+}
+@font-face {
+  font-family: kalvika_light;
+  /* font-weight: lighter; */
+  src: url("../fonts/klavika-light.otf");
+}
+body {
+  font-family: kalvika_basic;
+}
+
+.main_card_body {
+  /* display: flex; */
+  /* height: 959px; */
+  padding: 100px 0px 40px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  /* overflow: hidden; */
+}
+
+.heading_content_body {
+  display: flex;
+  width: 1312px;
+  align-items: flex-start;
+  gap: 144px;
+  margin: auto;
+}
+
+.heading_content p {
+  font-weight: 300;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 20px; /* 111.111% */
+  text-transform: uppercase;
+  color: var(--Teal, #2D748E);
+}
+
+.heading_content {
+  width: 528px;
+  flex-shrink: 0;
+}
+
+.heading_content_body .heading_content h3 {
+  color: var(--Navy, #F2B760);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "clig" off, "liga" off;
+  /* Desktop/T2 */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 125% */
+}
+
+.heading_content_body .content_body p {
+  color: var(--Black, #191A1B);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.view_btn a {
+  color: var(--Navy, #F2B760);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.card_scroll .card_wrapper .img_card {
+  /* background-image: url(../assets/images/Union-1.png); */
+  width: 368px;
+  background-position: right;
+  height: 400px;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 500ms ease;
+}
+
+.card_scroll .card_wrapper .img_card:nth-child(1) {
+  background-image: url(../assets/images/Union-3.png);
+  -webkit-clip-path: polygon(0% 0%, 80% 0%, 95% 50%, 80% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 80% 0%, 95% 50%, 80% 100%, 0% 100%);
+  background-position: left top;
+}
+
+.card_scroll .card_wrapper .img_card:nth-child(2) {
+  background-image: url(../assets/images/Union-4.png);
+}
+
+.card_scroll .card_wrapper .img_card:nth-child(3) {
+  background-image: url(../assets/images/Union.png);
+}
+
+.card_scroll .card_wrapper .img_card:nth-child(4) {
+  background-image: url(../assets/images/Union-1.png);
+}
+
+.card_scroll .card_wrapper .img_card:nth-child(5) {
+  background-image: url(../assets/images/Union-2.png);
+}
+
+.card_scroll .card_wrapper .img_card:nth-child(2),
+.card_scroll .card_wrapper .img_card:nth-child(3),
+.card_scroll .card_wrapper .img_card:nth-child(4) {
+  -webkit-clip-path: polygon(80% 0%, 95% 50%, 80% 100%, 0% 100%, 10% 50%, 0% 0%);
+          clip-path: polygon(80% 0%, 95% 50%, 80% 100%, 0% 100%, 10% 50%, 0% 0%);
+  background-position: left top;
+  margin-left: -75px;
+}
+
+.card_scroll .card_wrapper .img_card .card_body {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  padding-left: 35px;
+  padding-right: 60px;
+}
+
+.card_scroll .card_wrapper .img_card:nth-child(2) .shadow_wrapper, .card_scroll .card_wrapper .img_card:nth-child(4) .shadow_wrapper {
+  height: inherit;
+  background: var(--Green-4, #252525);
+  width: 100%;
+  position: absolute;
+  transition: all 500ms ease;
+}
+
+.card_scroll .card_wrapper .img_card:nth-child(5) {
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
+          clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
+  margin-left: -75px;
+}
+
+.card_scroll .card_wrapper .img_card .card_body p {
+  /* font-weight: 100; */
+  font-family: kalvika_light;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.card_btn button {
+  color: var(--Navy, #F2B760);
+  /* font-feature-settings: 'clig' off, 'liga' off; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 3px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.card_btn {
+  padding-bottom: 8px;
+}
+
+.card_scroll {
+  margin-top: 72px;
+}
+
+.shadow_wrapper {
+  height: inherit;
+  background: var(--Navy, #F2B760);
+  width: 100%;
+  position: absolute;
+  transition: all 500ms ease;
+}
+
+.hover_div {
+  height: 81%;
+  z-index: 999;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.shadow_heading {
+  background: white;
+  height: 72px;
+  padding: 4px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.img_card:hover .shadow_wrapper {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms ease;
+}
+
+.card_wrapper {
+  display: flex;
+  justify-content: start;
+  gap: -47px;
+}
+
+.card_scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  box-shadow: 0px 8px 24px 0px rgba(25, 26, 27, 0.1);
+}
+
+.card_scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* modal css */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 70vh;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* media queries */
+@media (max-width: 600px) and (min-width: 300px) {
+  .heading_content_body {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 0;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .main_card_body {
+    /* display: flex; */
+    /* height: 959px; */
+    padding: 10px 0px 40px 18px;
+    flex-direction: unset;
+    /* align-items: center; */
+    gap: 8px;
+    /* overflow: hidden; */
+  }
+  .heading_content {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .heading_content_body .heading_content h3 {
+    color: var(--Navy, #F2B760);
+    font-variant-numeric: lining-nums proportional-nums;
+    /* font-feature-settings: 'clig' off, 'liga' off; */
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    margin: 5px 0px;
+  }
+  .heading_content {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .heading_content_body .content_body p {
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 19px;
+  }
+  .view_btn a {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
